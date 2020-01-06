@@ -14,6 +14,9 @@ VERSION=4
 # directory that all VM backups should go (e.g. /vmfs/volumes/SAN_LUN1/mybackupdir)
 VM_BACKUP_VOLUME=/vmfs/volumes/mini-local-datastore-hdd/backups
 
+# directory that all VM backup LOGs should go (e.g. /vmfs/volumes/SAN_LUN1/mybackupdir/ghettoVCB-YYYY-MM-DD_HH-MM-SS-ProtzessID.log)
+LOG_OUTPUT=/vmfs/volumes/dlgCore-NFS-bigboi.VM-Backups/ghettoVCB-$(date +%F_%H-%M-%S)-$$.log
+
 # Format output of VMDK backup
 # zeroedthick
 # 2gbsparse
